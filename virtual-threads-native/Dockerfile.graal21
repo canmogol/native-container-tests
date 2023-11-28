@@ -1,0 +1,9 @@
+FROM ubuntu:23.10
+RUN ["/bin/bash", "-c", "apt update \
+&& apt install -y curl unzip zip zlib1g-dev build-essential \
+&& curl -s https://get.sdkman.io | bash \
+&& source /root/.sdkman/bin/sdkman-init.sh  \
+&& sdk install java 21-graal  \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/*"]
+CMD ["bash"]

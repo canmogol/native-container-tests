@@ -1,6 +1,6 @@
 # Native Server Containerized Load Tests
 
-# SPRING BOOT 3.2 NATIVE IMAGE
+# SPRING BOOT 3.2 NATIVE IMAGE (canm-vt)
 
 * Build
 ```
@@ -30,7 +30,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 
-# VT-NATIVE
+# VT-NATIVE (virtual-threads-native)
 
 * Build
 ```
@@ -61,7 +61,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 
-# GO SERVER
+# GO SERVER (go-helloworld)
 
 * Build
 ```
@@ -90,7 +90,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 
-# DART SERVER
+# DART SERVER (dart-shelf-server)
 
 * Build
 ```

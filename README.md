@@ -1,5 +1,6 @@
 # Native Server Containerized Load Tests
 
+
 # SPRING BOOT 3.2 NATIVE IMAGE (canm-vt)
 
 * Build
@@ -28,6 +29,7 @@ Percentage of the requests served within a certain time (ms)
   99%    602
  100%    806 (longest request)
 ```
+
 
 
 # VT-NATIVE (virtual-threads-native)
@@ -61,6 +63,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 
+
 # GO SERVER (go-helloworld)
 
 * Build
@@ -88,6 +91,7 @@ Percentage of the requests served within a certain time (ms)
   99%    203
  100%    394 (longest request)
 ```
+
 
 
 # DART SERVER (dart-shelf-server)
@@ -119,3 +123,33 @@ Percentage of the requests served within a certain time (ms)
  100%    393 (longest request)
 ```
 
+
+
+# DART FROG SERVER (dart_frog_server)
+
+* Build
+```
+docker build -t dart-frog-server .
+```
+
+* Run
+```
+docker run --rm -it -p 8080:8080 --cpus=0.2 --memory=64m --name dart-frog docker.io/library/dart-frog-server
+```
+
+* Load Test (Average Memory Usage ~5.8MB)
+```
+ab -c 100 -n 10000 http://localhost:8080/
+Complete requests:      10000
+Failed requests:        0
+Percentage of the requests served within a certain time (ms)
+  50%    203
+  66%    205
+  75%    207
+  80%    212
+  90%    289
+  95%    291
+  98%    293
+  99%    294
+ 100%    312 (longest request)
+```

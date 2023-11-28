@@ -153,3 +153,34 @@ Percentage of the requests served within a certain time (ms)
   99%    294
  100%    312 (longest request)
 ```
+
+
+
+# KTOR Native (ktor-server)
+
+* Build
+```
+docker build -t ktor-native .
+```
+
+* Run
+```
+docker run --rm -it -p 8080:8080 --cpus=0.2 --memory=64m --name ktor-native docker.io/library/ktor-native
+```
+
+* Load Test (Average Memory Usage ~23.6MB)
+```
+ab -c 100 -n 10000 http://localhost:8080/
+Complete requests:      10000
+Failed requests:        0
+Percentage of the requests served within a certain time (ms)
+  50%    198
+  66%    602
+  75%    700
+  80%    707
+  90%    890
+  95%    910
+  98%   1007
+  99%   1101
+ 100%   1688 (longest request)
+```

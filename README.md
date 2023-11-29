@@ -199,7 +199,7 @@ docker build -t deno-server .
 docker run --rm -it -p 8080:8080 --cpus=0.2 --memory=64m --name deno-server deno-server:latest
 ```
 
-* Load Test (Average Memory Usage ~23.6MB)
+* Load Test (Average Memory Usage ~26.9MB)
 ```
 ab -c 100 -n 10000 http://localhost:8080/
 Complete requests:      10000

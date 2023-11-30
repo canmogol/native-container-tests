@@ -36,8 +36,8 @@ Percentage of the requests served within a certain time (ms)
 
 * Build
 ```
-docker build -f Dockerfile.graal21 -t graal21
-docker build -t vt-native
+docker build -f Dockerfile.graal21 -t graal21 .
+docker build -t vt-native .
 ```
 
 * Run

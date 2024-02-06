@@ -1,5 +1,32 @@
 # Native Server Containerized Load Tests
 
+Here are the results of `ab` load testing. 
+
+- Response percentage vs response time in milliseconds.
+
+| Percentage / ms | SpBoVT 3.2 Native | JavaSrvVT Native | GO Srv | Dart Shelf | Dart Frog | KTor Native | Deno |
+| --------------- | ----------------- | ---------------- | ------ | ---------- | --------- | ----------- | ---- |
+| 50              | 299               | 101              | 99     | 200        | 203       | 198         | 98   |
+| 66              | 310               | 105              | 101    | 201        | 205       | 602         | 100  |
+| 75              | 398               | 109              | 103    | 202        | 207       | 700         | 101  |
+| 80              | 401               | 187              | 105    | 203        | 212       | 707         | 102  |
+| 90              | 495               | 195              | 191    | 210        | 289       | 890         | 105  |
+| 95              | 505               | 197              | 196    | 289        | 291       | 910         | 184  |
+| 98              | 598               | 199              | 200    | 294        | 293       | 1007        | 195  |
+| 99              | 602               | 202              | 203    | 297        | 294       | 1101        | 249  |
+| 100             | 806               | 304              | 394    | 393        | 312       | 1688        | 399  |
+
+[Response Times](docs/percent-response-time.png)
+
+
+- Average Memory Usage in MegaBytes.
+
+|            | SpBoVT 3.2 Native | JavaSrvVT Native | GO Srv | Dart Shelf | Dart Frog | KTor Native | Deno |
+| ---------- | ----------------- | ---------------- | ------ | ---------- | --------- | ----------- | ---- |
+| Memory(MB) | 52                | 19.3             | 8.6    | 7.5        | 5.8       | 23.6        | 26.9 |
+
+[Memory Usage](docs/memory-usage.png)
+
 
 # SPRING BOOT 3.2 NATIVE IMAGE (canm-vt)
 

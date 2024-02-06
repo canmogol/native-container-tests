@@ -1,6 +1,6 @@
 # Native Server Containerized Load Tests
 
-Here are the results of `ab` load testing. 
+Here are the results of `ab` load testing against containerized native applications running with 0.2 CPU and 64MB memory.
 
 - Response percentage vs response time in milliseconds.
 

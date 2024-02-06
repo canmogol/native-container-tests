@@ -16,7 +16,7 @@ Here are the results of `ab` load testing.
 | 99              | 602               | 202              | 203    | 297        | 294       | 1101        | 249  |
 | 100             | 806               | 304              | 394    | 393        | 312       | 1688        | 399  |
 
-[Response Times](docs/percent-response-time.png)
+![Response Times](docs/percent-response-time.png)
 
 
 - Average Memory Usage in MegaBytes.
@@ -25,7 +25,7 @@ Here are the results of `ab` load testing.
 | ---------- | ----------------- | ---------------- | ------ | ---------- | --------- | ----------- | ---- |
 | Memory(MB) | 52                | 19.3             | 8.6    | 7.5        | 5.8       | 23.6        | 26.9 |
 
-[Memory Usage](docs/memory-usage.png)
+![Memory Usage](docs/memory-usage.png)
 
 
 # SPRING BOOT 3.2 NATIVE IMAGE (canm-vt)
